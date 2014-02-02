@@ -1,12 +1,16 @@
 @import "packages/bourbon/bourbon";
 @import "packages/neat/neat";
 
-/*  VARIABLES  */
+/*  COLOR VARIABLES  */
 $gold: #F2A728;
 $green: #ACA729;
 $lightgold: #FCF6E7;
 $purple: #622149;
 $teal: #078876;
+
+/*  FONT VARIABLES  */
+$oxygen: 'Oxygen', sans-serif;
+$source-sans: 'Source Sans Pro', sans-serif;
 
 /*  BODY  */
 body {
