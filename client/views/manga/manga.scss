@@ -1,0 +1,6 @@
+@import "client/stylesheets/global";
+
+.each-manga {
+    @include span-columns(3);
+    @include omega(4n);
+}

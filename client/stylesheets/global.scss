@@ -17,6 +17,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: $source-sans;
+    font-weight: 300;
+    a {
+        text-decoration: none;
+    }
 }
 
 /*  HEADER  */
@@ -39,4 +43,15 @@ header {
        font-size: 72px;
        text-align: right;
    }
+}
+
+/*  MAIN  */
+.main {
+    @include outer-container;
+}
+
+/*  FOOTER  */
+footer {
+    @include fill-parent;
+    @include outer-container;
 }
