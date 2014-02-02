@@ -19,6 +19,6 @@ if Manga.find().count() is 0
 
     Manga.insert
         img: 'http://placehold.it/200x300'
-        title: 'Why You Game Sucks'
+        title: 'Why Your Game Sucks'
         author: 'Dezden Jimenez, Nathan Strauser'
         url: '#'
