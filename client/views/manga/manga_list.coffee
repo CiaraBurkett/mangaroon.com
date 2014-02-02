@@ -14,7 +14,7 @@ mangaData = [
     author: 'Colin Orr'
     url: '#'
 ,
-    img: 'http://www.placehold.it/200x300'
+    img: 'http://placehold.it/200x300'
     title: 'This is Why Your Game Sucks'
     author: 'Dezden Jimenez, Nathan Strauser'
     url: '#'
