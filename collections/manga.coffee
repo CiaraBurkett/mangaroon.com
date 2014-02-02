@@ -1,1 +1,1 @@
-Posts = new Meteor.Collection("manga")
+Manga = new Meteor.Collection("manga")
