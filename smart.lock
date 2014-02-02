@@ -4,7 +4,8 @@
     "basePackages": {
       "scss": {},
       "bourbon": {},
-      "neat": {}
+      "neat": {},
+      "font-awesome": {}
     },
     "packages": {
       "scss": {
@@ -21,6 +22,11 @@
         "git": "https://github.com/chicagogrooves/meteor-neat.git",
         "tag": "v1.5.0",
         "commit": "6c318cce1c02e822d6a340c547273b29b6379197"
+      },
+      "font-awesome": {
+        "git": "https://github.com/nate-strauser/meteor-font-awesome.git",
+        "tag": "v4.0.3",
+        "commit": "61e9361384347547ae144f8228faa4deffda23db"
       }
     }
   }
