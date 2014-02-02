@@ -4,7 +4,7 @@
 /*  COLOR VARIABLES  */
 $gold: #F2A728;
 $green: #ACA729;
-$lightgold: #FCF6E7;
+$whitegold: #FCF6E7;
 $purple: #622149;
 $teal: #078876;
 
@@ -26,14 +26,18 @@ body {
 /*  HEADER  */
 header {
    @include fill-parent;
-   @include outer-container;
+   background-color: $gold;
    height: 100px;
+   margin: 0 0 60px 0;
+   a {
+       color: white;
+   }
    #logo {
        @include span-columns(10);
        font-family: $oxygen;
        font-size: 36px;
        h1 {
-           margin: 0;
+           margin: 0 0 0 20px;
            padding: 0;
            text-transform: lowercase;
        }
@@ -42,6 +46,9 @@ header {
        @include span-columns(2);
        font-size: 72px;
        text-align: right;
+       i {
+           margin: 0 20px 0 0;
+       }
    }
 }
 
