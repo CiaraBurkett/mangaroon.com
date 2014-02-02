@@ -1,7 +1,21 @@
 @import "packages/bourbon/bourbon";
 @import "packages/neat/neat";
 
+/*  VARIABLES  */
+$gold: #F2A728;
+$green: #ACA729;
+$lightgold: #FCF6E7;
+$purple: #622149;
+$teal: #078876;
+
+/*  BODY  */
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /*  HEADER  */
 header {
-    
+   @include fill-parent;
+   width: 100%;
 }
