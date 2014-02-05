@@ -1,9 +1,11 @@
-<body>
-    <div class="container">
-        {{> header}}
-        <div class="main">
-            {{yield}}
-        </div><!-- end .main -->
-        {{> footer}}
-    </div><!-- end .container -->
-</body>
+<template name="layout">
+    <body>
+        <div class="container">
+            {{> header}}
+            <div class="main">
+                {{yield}}
+            </div><!-- end .main -->
+            {{> footer}}
+        </div><!-- end .container -->
+    </body>
+</template>

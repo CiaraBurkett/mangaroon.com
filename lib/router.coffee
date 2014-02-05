@@ -2,7 +2,7 @@ Router.configure
     layoutTemplate: "layout"
     loadingTemplate: "loading"
     waitOn: () ->
-        Meteor.subscribe "posts"
+        Meteor.subscribe "manga"
 
 Router.map () ->
     @route "mangaList",
