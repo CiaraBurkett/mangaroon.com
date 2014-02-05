@@ -4,6 +4,7 @@
     "bourbon": {},
     "neat": {},
     "font-awesome": {},
-    "iron-router": {}
+    "iron-router": {},
+    "spin": {}
   }
 }
