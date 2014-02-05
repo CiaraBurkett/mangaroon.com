@@ -1,12 +1,12 @@
 <template name="mangaItem">
     <div class="each-manga">
         <div class="cover">
-            <a href="{{url}}"><img src="{{img}}" alt="{{title}}" /></a>
+            <a href="{{pathFor 'mangaPage'}}"><img src="{{img}}" alt="{{title}}" /></a>
         </div><!-- end. cover -->
 
         <div class="author">
             <dl>
-                <dt><strong><a href="{{url}}">{{title}}</a></strong></dt>
+                <dt><strong><a href="{{pathFor 'mangaPage'}}">{{title}}</a></strong></dt>
                 <dd>{{author}}</dd>
             </dl>
         </div><!-- end .author -->

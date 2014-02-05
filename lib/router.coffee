@@ -7,3 +7,8 @@ Router.configure
 Router.map () ->
     @route "mangaList",
         path: "/"
+
+    @route "mangaPage",
+        path: "/manga/:_id"
+        data: () ->
+            Manga.findOne @params._id
