@@ -3,6 +3,7 @@
     "scss": {},
     "bourbon": {},
     "neat": {},
-    "font-awesome": {}
+    "font-awesome": {},
+    "iron-router": {}
   }
 }
