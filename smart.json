@@ -6,6 +6,8 @@
     "font-awesome": {},
     "iron-router": {},
     "spin": {},
-    "accounts-entry": {}
+    "accounts-entry": {},
+    "jpanel": {},
+    "bootstrap-3": {}
   }
 }

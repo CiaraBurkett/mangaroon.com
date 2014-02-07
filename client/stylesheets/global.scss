@@ -33,13 +33,25 @@ header {
        color: white;
    }
    #logo {
-       @include span-columns(10);
+       @include span-columns(4);
        font-family: $oxygen;
        font-size: 36px;
        h1 {
            margin: 0 0 0 20px;
            padding: 0;
            text-transform: lowercase;
+       }
+   }
+   nav {
+       @include span-columns(6);
+       text-align: right;
+       ul {
+           list-style-type: none;
+           li {
+               display: inline-block;
+               font-size: 24px;
+               vertical-align: middle;
+           }
        }
    }
    .bars {
