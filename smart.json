@@ -5,6 +5,7 @@
     "neat": {},
     "font-awesome": {},
     "iron-router": {},
-    "spin": {}
+    "spin": {},
+    "accounts-entry": {}
   }
 }

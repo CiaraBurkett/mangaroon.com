@@ -13,3 +13,6 @@ neat
 font-awesome
 iron-router
 spin
+accounts-ui
+accounts-password
+accounts-entry
