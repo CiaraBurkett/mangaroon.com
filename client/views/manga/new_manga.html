@@ -1,0 +1,25 @@
+<template name="newManga">
+    <form>
+        <div>
+            <label for="cover">Cover Image</label>
+            <input name="cover" type="file" accept="image/*" />
+        </div>
+        
+        <div>
+            <label for="title">Title</label>
+            <input name="title" type="text" value="" placeholder="Manga Title" />
+        </div>
+        
+        <div>
+            <label for="author">Author</label>
+            <input name="author" type="text" value="" placeholder="Mangaka" />
+        </div>
+        
+        <div>
+            <label for="description">Description</label>
+            <textarea name="description" type="text" value="" placeholder="Draw in your readers with a short and sweet description of your manga or comic!" />
+        </div>
+
+        <input type="submit" value="Submit" />
+    </form>
+</template>
