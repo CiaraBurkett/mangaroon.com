@@ -16,6 +16,9 @@ Router.map () ->
     @route "newManga",
         path: "/new"
 
+    @route "dashboard",
+        path: "/dashboard"
+
 requireLogin = () ->
     unless Meteor.user()
         if Meteor.logginIn()
