@@ -1,3 +1,5 @@
 Template.mangaList.helpers
     manga: () ->
-        Manga.find()
+       Manga.find {},
+           sort:
+               submitted: -1
