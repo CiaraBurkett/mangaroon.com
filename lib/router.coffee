@@ -15,3 +15,12 @@ Router.map () ->
 
     @route "newManga",
         path: "/new"
+
+requireLogin = () ->
+    unless Meteor.user()
+        @render "accessDenied"
+        @stop()
+    return
+
+Router.before requireLogin,
+    only: "newManga"
