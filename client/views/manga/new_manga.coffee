@@ -8,5 +8,10 @@ Template.newManga.events
         author: $(e.target).find("[name=author]").val(),
         description: $(e.target).find("name=description]").val()
 
-    manga._id = Manga.insert(manga)
-    Router.go "mangaPage", manga
+    Meteor.call "manga", manga, (error, id) ->
+        return alert(error.reason) if error
+
+        Router.go "mangaPage",
+            _id: id
+
+        return
