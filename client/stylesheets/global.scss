@@ -2,12 +2,13 @@
 @import "packages/neat/neat";
 
 /*  COLOR VARIABLES  */
-$gold: #F2A728;
-$green: #ACA729;
+$gold: #FDCC50;
+$green: #D2CC32;
 $whitegold: #FCF6E7;
 $purple: #622149;
 $teal: #078876;
 $red: #D82E2E;
+$offwhite: #FAFAFA;
 
 /*  FONT VARIABLES  */
 $source-sans: 'Source Sans Pro', sans-serif;
@@ -27,35 +28,20 @@ body {
 /*  HEADER  */
 header {
    @include fill-parent;
-   background-color: $red;
-   height: 150px;
+   background-color: $gold;
+   height: 115px;
    margin: 0;
    a {
-       color: $whitegold;
+       color: white;
    }
    #logo {
-       @include span-columns(4);
+       @include span-columns(10);
        font-family: $arvo;
        font-size: 36px;
        h1 {
            margin: 0 0 0 20px;
            padding: 0;
            text-transform: lowercase;
-       }
-   }
-   #search-box {
-       @include span-columns(6);
-       color: $whitegold;
-       margin-right: -60px;
-       margin-top: 50px;
-       text-align: right;
-       input {
-           background-color: $red;
-           border: 1px solid $whitegold;
-           border-top: 0;
-           border-right: 0;
-           border-left: 0;
-           width: 250px;
        }
    }
    .bars {
@@ -70,9 +56,11 @@ header {
 
 /*  NAV  */
 nav {
-    background-color: $red;
+    background-color: $green;
+    border-bottom: 5px solid #aca729;
     height: 50px;
-    margin: -18px 0 60px 0;
+    margin: auto 0 60px 0;
+    padding-top: 10px;
     ul {
         list-style-type: none;
         margin: auto 0 auto -20px;
@@ -83,7 +71,7 @@ nav {
             margin-right: 25px;
             text-transform: uppercase;
             a {
-                color: $whitegold;
+                color: white;
                 
                 }
             }
@@ -98,7 +86,8 @@ nav {
 /*  FOOTER  */
 footer {
     @include fill-parent;
-    background-color: $red;
+    background-color: $gold;
+    border-top: 5px solid #FFB70F;
     color: $whitegold;
     height: 50px;
     a {

@@ -1,24 +1,16 @@
 <template name="header">
     <header>
         <div id="logo">
-            <h1><a href="{{pathFor 'mangaList'}}">Mangaroon</a></h1>
+            <h1><a href="{{pathFor 'mangaList'}}">Mangaroon!</a></h1>
         </div><!-- end #logo -->
-        <div id="search-box">
-            <!-- <ul>
-                <li><a href="/sign-up">Sign up</a><i>or</i></li>
-                <li><a href="/sign-in">Sign in</a></li>
-                {{#if currentUser}}
-                    <li><a href="{{pathFor 'newManga'}}">+ Add New</a></li>
-                {{/if}}
-            </ul> -->
-            <input type="text" name="search" /><i class="fa fa-search"></i>
-        </div><!-- end #search-box -->
+
         <div class="bars">
-            <a href="#"><i class="fa fa-bars"></i></a>
+            <a id="nav-trigger" href="#"><i class="fa fa-bars"></i></a>
         </div><!-- end .bars -->
     </header>
     <nav>
         <ul>
+            <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
             {{#if currentUser}}
             <li><a href="{{pathFor 'newManga'}}"><i class="fa fa-plus"></i> New Manga</a></li>
             <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
@@ -29,7 +21,7 @@
             <li><a href="#"><i class="fa fa-star"></i> Discover</a></li>
             <li><a href="/sign-out"><i class="fa fa-unlock"></i> Sign Out</a></li>
             {{/if}}
-
+            <li><a href="#"><i class="fa fa-search"></i> Search</a></li>
             {{#unless currentUser}}
             <li><a href="/sign-in"><i class="fa fa-lock"></i> Sign in</a></li>
             {{/unless}}
