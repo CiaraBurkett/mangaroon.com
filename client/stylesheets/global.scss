@@ -2,12 +2,15 @@
 @import "packages/neat/neat";
 
 /*  COLOR VARIABLES  */
-$gold: #FDCC50;
+$gold: #FAC13A;
+$darkgold: #FFB70F; 
 $green: #D2CC32;
+$darkgreen: #ACA729;
 $whitegold: #FCF6E7;
 $purple: #622149;
 $teal: #078876;
 $red: #D82E2E;
+$rose: #F65353;
 $offwhite: #FAFAFA;
 
 /*  FONT VARIABLES  */
@@ -43,6 +46,9 @@ header {
            padding: 0;
            text-transform: lowercase;
        }
+       .fa.fa-comment-o {
+        font-size: 96px;
+       }
    }
    .bars {
        @include span-columns(2);
@@ -57,7 +63,7 @@ header {
 /*  NAV  */
 nav {
     background-color: $green;
-    border-bottom: 5px solid #aca729;
+    border-bottom: 5px solid $darkgreen;
     height: 50px;
     margin: auto 0 60px 0;
     padding-top: 10px;
@@ -87,7 +93,7 @@ nav {
 footer {
     @include fill-parent;
     background-color: $gold;
-    border-top: 5px solid #FFB70F;
+    border-top: 5px solid $darkgold;
     color: $whitegold;
     height: 50px;
     a {
