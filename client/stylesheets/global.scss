@@ -7,10 +7,11 @@ $green: #ACA729;
 $whitegold: #FCF6E7;
 $purple: #622149;
 $teal: #078876;
+$red: #D82E2E;
 
 /*  FONT VARIABLES  */
-$oxygen: 'Oxygen', sans-serif;
 $source-sans: 'Source Sans Pro', sans-serif;
+$arvo: 'Arvo', serif;
 
 /*  BODY  */
 body {
@@ -26,15 +27,15 @@ body {
 /*  HEADER  */
 header {
    @include fill-parent;
-   background-color: $gold;
-   height: 100px;
-   margin: 0 0 60px 0;
+   background-color: $red;
+   height: 150px;
+   margin: 0;
    a {
-       color: white;
+       color: $whitegold;
    }
    #logo {
        @include span-columns(4);
-       font-family: $oxygen;
+       font-family: $arvo;
        font-size: 36px;
        h1 {
            margin: 0 0 0 20px;
@@ -42,16 +43,19 @@ header {
            text-transform: lowercase;
        }
    }
-   nav {
+   #search-box {
        @include span-columns(6);
+       color: $whitegold;
+       margin-right: -60px;
+       margin-top: 50px;
        text-align: right;
-       ul {
-           list-style-type: none;
-           li {
-               display: inline-block;
-               font-size: 24px;
-               vertical-align: middle;
-           }
+       input {
+           background-color: $red;
+           border: 1px solid $whitegold;
+           border-top: 0;
+           border-right: 0;
+           border-left: 0;
+           width: 250px;
        }
    }
    .bars {
@@ -64,6 +68,28 @@ header {
    }
 }
 
+/*  NAV  */
+nav {
+    background-color: $red;
+    height: 50px;
+    margin: -18px 0 60px 0;
+    ul {
+        list-style-type: none;
+        margin: auto 0 auto -20px;
+        li {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 200;
+            margin-right: 25px;
+            text-transform: uppercase;
+            a {
+                color: $whitegold;
+                
+                }
+            }
+        }
+    }
+
 /*  MAIN  */
 .main {
     @include outer-container;
@@ -72,5 +98,10 @@ header {
 /*  FOOTER  */
 footer {
     @include fill-parent;
-    @include outer-container;
+    background-color: $red;
+    color: $whitegold;
+    height: 50px;
+    a {
+        color: $whitegold;
+    }
 }
