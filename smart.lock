@@ -11,7 +11,8 @@
       "accounts-entry": {},
       "jpanel": {},
       "bootstrap-3": {},
-      "smartfile": {}
+      "smartfile": {},
+      "houston": {}
     },
     "packages": {
       "scss": {
@@ -64,6 +65,11 @@
         "tag": "v0.1.2",
         "commit": "4eb9fb8b72bdbf26a27c5016cb22a63dc1ef90b3"
       },
+      "houston": {
+        "git": "https://github.com/gterrono/meteor-admin-ui.git",
+        "tag": "v1.0.0",
+        "commit": "e98660af09cb3e4e90848abfe943a06e7068cccc"
+      },
       "just-i18n": {
         "git": "https://github.com/subhog/meteor-just-i18n.git",
         "tag": "v0.1.1",
@@ -73,6 +79,11 @@
         "git": "https://github.com/softwarerero/meteor-accounts-t9n.git",
         "tag": "v0.0.2",
         "commit": "408e3a037114cb72163073110e2121e3d548c1a2"
+      },
+      "paginated-subscription": {
+        "git": "https://github.com/tmeasday/meteor-paginated-subscription.git",
+        "tag": "v0.1.2",
+        "commit": "35e0c6112df2b4cfeb60b559276a93cac5ee2dd6"
       }
     }
   }
