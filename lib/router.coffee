@@ -21,7 +21,7 @@ Router.map () ->
 
 requireLogin = () ->
     unless Meteor.user()
-        if Meteor.logginIn()
+        if Meteor.loggingIn()
             @render(@loadingTemplate)
         else
             @render "accessDenied"
