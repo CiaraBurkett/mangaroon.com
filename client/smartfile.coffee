@@ -1,12 +1,12 @@
-smartfile = new SmartFile()
+smartfile = new SmartFile(publicRootUrl: "https://file.ac/2ewsByMDlIQ/")
 
-smartfile.upload file,
-    path: "uploads"
-, (err,res) ->
-    if err
-        console.log "upload failed", err
+Template.newManga.events submit: (event, template) ->
+    event.preventDefault()
+    form = template.find("newManga")
+    file = form.cover.files[0]
+    smartfile.upload file, (err, result) ->
+        form.reset()
+        console.log "Upload public URL:" + smartfile.resolvePublic(result)
         return
-
-    # Log the public URL of the upload
-    console.log "Upload public url:" + smartfile.resolvePublic(res)
     return
+
