@@ -1,5 +1,14 @@
 @Manga = new Meteor.Collection("manga")
 
+@Manga.allow
+    update: ownsDocument
+    remove: ownsDocument
+
+@Manga.deny
+    update: (userId, post, fieldNames) ->
+        # May only edit the following three fields
+        return (_.without(fieldNames, "title", "authot", "description").length > 0)
+
 @Meteor.methods manga: (mangaAttributes) ->
     user = Meteor.user()
     mangaWithSameLink = Manga.findOne(url: mangaAttributes.url)

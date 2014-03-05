@@ -14,7 +14,7 @@ Template.mangaEdit.events
                 # Display the error to the user
                 alert error.reason
             else
-                Router.go "mangaPage"
+                Router.go "mangaPage",
                 _id: currentMangaId
 
             return
