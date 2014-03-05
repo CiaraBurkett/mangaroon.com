@@ -5,7 +5,7 @@
     remove: ownsDocument
 
 @Manga.deny
-    update: (userId, post, fieldNames) ->
+    update: (userId, manga, fieldNames) ->
         # May only edit the following three fields
         return (_.without(fieldNames, "title", "authot", "description").length > 0)
 
