@@ -13,6 +13,11 @@ Router.map () ->
         data: () ->
             Manga.findOne @params._id
 
+    @route "mangaEdit",
+        path: "/manga/:_id/edit"
+        data: ->
+            Manga.findOne @params._id
+
     @route "newManga",
         path: "/new"
 

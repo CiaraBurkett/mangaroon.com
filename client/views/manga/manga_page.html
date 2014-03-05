@@ -1,4 +1,10 @@
 <template name="mangaPage">
     {{> mangaItem}}
     {{ description }}
+    <p>
+        submitted by {{author}}
+        {{#if ownManga}}
+            <a href="{{pathFor 'mangaEdit'}}">Edit</a>
+        {{/if}}
+    </p>
 </template>

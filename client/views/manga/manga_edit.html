@@ -1,0 +1,23 @@
+<template name="mangaEdit">
+    <form>
+        <div>
+            <label for"title">Title</label>
+            <input name="title" type="text" value="{{title}}" placeholder="Name your manga" />
+        </div>
+        
+        <div>
+            <label for="author">Author</label>
+            <input name="author" type="text" value="{{author}}" placeholder="Mangaka(s)" />
+        </div>
+
+        <div>
+            <label for="description">Description</label>
+            <textarea name="description" type="text" value="{{description}}" placeholder="Draw in your readers with a short and sweet description of your manga or comic!"></textarea>
+        </div>
+
+        <input type="submit" value="Submit">
+        <hr />
+
+        <a class="delete" href="#">Delete</a>
+    </form>
+</template>
