@@ -7,7 +7,7 @@
 @Manga.deny
     update: (userId, manga, fieldNames) ->
         # May only edit the following three fields
-        return (_.without(fieldNames, "title", "authot", "description").length > 0)
+        return (_.without(fieldNames, "title", "author", "description").length > 0)
 
 @Meteor.methods manga: (mangaAttributes) ->
     user = Meteor.user()
