@@ -23,6 +23,8 @@ Router.map () ->
 
     @route "dashboard",
         path: "/dashboard"
+        data: ->
+            Meteor.user()
 
 requireLogin = () ->
     unless Meteor.user()

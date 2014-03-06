@@ -13,7 +13,8 @@
       "bootstrap-3": {},
       "smartfile": {},
       "houston": {},
-      "foundation5-sass": {}
+      "foundation5-sass": {},
+      "profile": {}
     },
     "packages": {
       "scss": {
@@ -75,6 +76,11 @@
         "git": "https://github.com/lgollut/meteor-foundation5-sass.git",
         "tag": "v0.0.9",
         "commit": "bd89f1600a0360afb1bd4cc6ff6dc7d30450084d"
+      },
+      "profile": {
+        "git": "https://github.com/BeDifferential/meteor-profile.git",
+        "tag": "v0.0.8",
+        "commit": "a79eed39b871d4c384b76d77b78e318eb2f300fd"
       },
       "just-i18n": {
         "git": "https://github.com/subhog/meteor-just-i18n.git",

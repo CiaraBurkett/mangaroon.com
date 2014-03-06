@@ -11,6 +11,7 @@
     "bootstrap-3": {},
     "smartfile": {},
     "houston": {},
-    "foundation5-sass": {}
+    "foundation5-sass": {},
+    "profile": {}
   }
 }
