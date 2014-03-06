@@ -12,7 +12,8 @@
       "jpanel": {},
       "bootstrap-3": {},
       "smartfile": {},
-      "houston": {}
+      "houston": {},
+      "foundation5-sass": {}
     },
     "packages": {
       "scss": {
@@ -70,6 +71,11 @@
         "tag": "v1.0.1",
         "commit": "59653d3a345a438c83bfd5244b992a19c4b014d7"
       },
+      "foundation5-sass": {
+        "git": "https://github.com/lgollut/meteor-foundation5-sass.git",
+        "tag": "v0.0.9",
+        "commit": "bd89f1600a0360afb1bd4cc6ff6dc7d30450084d"
+      },
       "just-i18n": {
         "git": "https://github.com/subhog/meteor-just-i18n.git",
         "tag": "v0.1.1",
@@ -84,6 +90,11 @@
         "git": "https://github.com/tmeasday/meteor-paginated-subscription.git",
         "tag": "v0.1.2",
         "commit": "35e0c6112df2b4cfeb60b559276a93cac5ee2dd6"
+      },
+      "jquery": {
+        "git": "https://github.com/nrafter/meteor-jquery.git",
+        "tag": "v2.0.31",
+        "commit": "3edf878d51e6f03eff70e1a7a969a19f42b6f1a1"
       }
     }
   }
