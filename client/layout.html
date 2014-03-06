@@ -1,12 +1,25 @@
 <template name="layout">
     <body>
-        <div class="container">
-            {{> header}}
-            <div class="main">
-                {{yield}}
-            </div><!-- end .main -->
-            {{> footer}}
-        </div><!-- end .container -->
+        <div class="off-canvas-wrap">
+            <div class="inner-wrap">
+                <!-- <header> -->
+                <!--     <a class="right-off-canvas-toggle" href="#"><i class="fa fa-bars"></i></a> -->
+                <!--     <aside class="right-off-canvas-menu"> -->
+                <!--         <ul> -->
+                <!--             <li>Home</li> -->
+                <!--         </ul> -->
+                <!--     </aside> -->
+                <!-- </header> -->
+                {{> header}}
+                <div class="container">
+                    <div class="main">
+                        {{yield}}
+                    </div><!-- end .main -->
+                    {{> footer}}
+                </div><!-- end .container -->
+                <a class="exit-off-canvas"></a>
+            </div><!-- end .inner-wrap -->
+        </div><!-- end .off-canvas-wrap -->
         {{init-foundation}}
     </body>
 </template>

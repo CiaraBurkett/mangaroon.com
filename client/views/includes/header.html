@@ -1,30 +1,54 @@
 <template name="header">
     <header>
         <div id="logo">
-            <h1><a href="{{pathFor 'mangaList'}}">Mangaroon<i class="fa fa-comment-o"></i></a></h1>
+             <h1><a href="{{pathFor 'mangaList'}}">Mangaroon</i></a></h1>
         </div><!-- end #logo -->
 
         <div class="bars">
-            <a id="nav-trigger" href="#"><i class="fa fa-bars"></i></a>
+            <a class="right-off-canvas-toggle" href="#"><i class="fa fa-bars"></i></a>
         </div><!-- end .bars -->
+
+        <aside class="right-off-canvas-menu">
+            <nav>
+                <ul>
+                    <li><a href="/"><i class="fa fa-home"></i>  Home</a></li>
+                    {{#if currentUser}}
+                    <li><a href="#profile"><i class="fa fa-user"></i>  Profile</a></li>
+                    <li><a href="/dashboard"><i class="fa fa-tachometer"></i>  Dashboard</a></li>
+                    <li><a href="#notifications"><i class="fa fa-envelope-o"></i>  Notifications</a></li>
+                    {{/if}}
+                    <li>{{accountButtons}}</li>
+                </ul>
+            </nav>
+        </aside>
     </header>
-    <nav>
-        <ul>
-            <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-            {{#if currentUser}}
-                <li><a href="{{pathFor 'newManga'}}"><i class="fa fa-plus"></i> New Manga</a></li>
-                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
-                <li><a href="/dashboard"><i class="fa fa-tachometer"></i> Dashboard</a></li>
-                <li><a href="#"><i class="fa fa-list"></i> Queue</a></li>
-                <li><a href="#"><i class="fa fa-users"></i> Groups</a></li>
-                <li><a href="#"><i class="fa fa-envelope-o"></i> Notifications</a></li>
-                <li><a href="#"><i class="fa fa-star"></i> Discover</a></li>
-                <li><a href="/sign-out"><i class="fa fa-unlock"></i> Sign Out</a></li>
-            {{/if}}
-            <li><a href="#"><i class="fa fa-search"></i> Search</a></li>
-            {{#unless currentUser}}
-                <li><a href="/sign-in"><i class="fa fa-lock"></i> Sign in</a></li>
-            {{/unless}}
-        </ul>
-    </nav>
+    }}
+    <!-- <header> -->
+    <!--     <div id="logo"> -->
+    <!--         <h1><a href="{{pathFor 'mangaList'}}">Mangaroon<i class="fa fa-comment-o"></i></a></h1> -->
+    <!--     </div><1!-- end #logo --1> -->
+
+    <!--     <div class="bars"> -->
+    <!--         <a id="nav-trigger" href="#"><i class="fa fa-bars"></i></a> -->
+    <!--     </div><1!-- end .bars --1> -->
+    <!-- </header> -->
+    <!-- <nav> -->
+    <!--     <ul> -->
+    <!--         <li><a href="/"><i class="fa fa-home"></i> Home</a></li> -->
+    <!--         {{#if currentUser}} -->
+    <!--             <li><a href="{{pathFor 'newManga'}}"><i class="fa fa-plus"></i> New Manga</a></li> -->
+    <!--             <li><a href="#"><i class="fa fa-user"></i> Profile</a></li> -->
+    <!--             <li><a href="/dashboard"><i class="fa fa-tachometer"></i> Dashboard</a></li> -->
+    <!--             <li><a href="#"><i class="fa fa-list"></i> Queue</a></li> -->
+    <!--             <li><a href="#"><i class="fa fa-users"></i> Groups</a></li> -->
+    <!--             <li><a href="#"><i class="fa fa-envelope-o"></i> Notifications</a></li> -->
+    <!--             <li><a href="#"><i class="fa fa-star"></i> Discover</a></li> -->
+    <!--             <li><a href="/sign-out"><i class="fa fa-unlock"></i> Sign Out</a></li> -->
+    <!--         {{/if}} -->
+    <!--         <li><a href="#"><i class="fa fa-search"></i> Search</a></li> -->
+    <!--         {{#unless currentUser}} -->
+    <!--             <li><a href="/sign-in"><i class="fa fa-lock"></i> Sign in</a></li> -->
+    <!--         {{/unless}} -->
+    <!--     </ul> -->
+    <!-- </nav> -->
 </template>
