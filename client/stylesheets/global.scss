@@ -5,6 +5,8 @@
 /*  COLOR VARIABLES  */
 $gold: #FAC13A;
 $darkgold: #FFB70F; 
+$darkergold: #F7A916;
+$burntorange: #E88F23;
 $green: #D2CC32;
 $darkgreen: #ACA729;
 $whitegold: #FCF6E7;
@@ -17,6 +19,7 @@ $offwhite: #FAFAFA;
 /*  FONT VARIABLES  */
 $source-sans: 'Source Sans Pro', sans-serif;
 $arvo: 'Arvo', serif;
+$helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 /*  BODY  */
 body {
@@ -27,12 +30,16 @@ body {
     a {
         text-decoration: none;
     }
+    .button {
+        background-color: $burntorange;
+    }
 }
 
 /*  HEADER  */
 header {
    @include fill-parent;
    background-color: $darkgold;
+   border-bottom: 10px solid $darkergold;
    height: 75px;
    margin: 0;
    a {
@@ -62,6 +69,11 @@ header {
 }
 
 /*  NAV  */
+nav {
+    i {
+    padding-right: 1em;
+    }
+}
 /*  MAIN  */
 .main {
     @include outer-container;

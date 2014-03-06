@@ -26,6 +26,9 @@ Router.map () ->
         data: ->
             Meteor.user()
 
+    @route "userProfile",
+        path: "/users/:_id"
+
 requireLogin = () ->
     unless Meteor.user()
         if Meteor.loggingIn()
