@@ -1,6 +1,6 @@
 Meteor.startup ->
-    Accounts.ui.config
-        passwordSignupFields: 'USERNAME_AND_EMAIL'
+    #Accounts.ui.config
+    #passwordSignupFields: 'USERNAME_AND_EMAIL'
 
     AccountsEntry.config
         homeRoute: '/'
@@ -8,5 +8,6 @@ Meteor.startup ->
         termsUrl: '/terms-of-use'
         dashboardRoute: '/dashboard'
         profileRoute: '/profile'
+        passwordSignupFields: "USERNAME_AND_EMAIL"
         language: 'en'
         showSignupCode: false
