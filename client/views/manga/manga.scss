@@ -4,9 +4,8 @@
     @include span-columns(3);
     @include omega(4n);
     .title {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 400;
-        color: $teal;
         line-height: 30px;
     }
     .author {

@@ -32,17 +32,17 @@ body {
 /*  HEADER  */
 header {
    @include fill-parent;
-   background-color: $gold;
-   height: 115px;
+   background-color: $darkgold;
+   height: 75px;
    margin: 0;
    a {
        color: white;
    }
    #logo {
-       @include span-columns(9);
-       font-family: $arvo;
-       font-size: 36px;
+       @include span-columns(8);
        h1 {
+           font-family: $arvo;
+           font-weight: 900;
            margin: 0 0 0 20px;
            padding: 0;
            text-transform: lowercase;
@@ -51,10 +51,10 @@ header {
         font-size: 96px;
        }
    }
-   .bars {
-       @include span-columns(2);
-       font-size: 50px;
+   #bars {
+       @include span-columns(3);
        text-align: right;
+       text-transform: uppercase;
        i {
            margin: 0 20px 0 0;
        }

@@ -4,11 +4,25 @@
              <h1><a href="{{pathFor 'mangaList'}}">Mangaroon</i></a></h1>
         </div><!-- end #logo -->
 
-        <div class="bars">
-            <a class="right-off-canvas-toggle" href="#"><i class="fa fa-bars"></i></a>
+        <div id="bars">
+            <div class="button-bar">
+            <ul class="button-group">
+                {{#unless currentUser}}
+                <li><a class="button" href="/sign-in"><i class="fa fa-lock"></i></a></li>
+                {{/unless}}
+                {{#if currentUser}}
+                <li><a class='profileLink button' href='/profile'><i class="fa fa-user"></i>{{{beforeSignedInAs}}}{{signedInAs}}</a></li>
+                {{/if}}
+            </ul>
+
+            <ul class="button-group">
+                <li><a class="right-off-canvas-toggle button" href="#"><i class="fa fa-bars"></i>Menu</a></li>
+            </ul>
+        </div><!-- end .button-bar -->
         </div><!-- end .bars -->
 
         <aside class="right-off-canvas-menu">
+            <a class="button expand" href="#">UPGRADE NOW!</a>
             <nav>
                 <ul>
                     <li><a href="/"><i class="fa fa-home"></i>  Home</a></li>
@@ -22,7 +36,6 @@
             </nav>
         </aside>
     </header>
-    }}
     <!-- <header> -->
     <!--     <div id="logo"> -->
     <!--         <h1><a href="{{pathFor 'mangaList'}}">Mangaroon<i class="fa fa-comment-o"></i></a></h1> -->
