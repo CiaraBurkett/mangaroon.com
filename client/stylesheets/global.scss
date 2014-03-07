@@ -39,7 +39,6 @@ body {
 header {
    @include fill-parent;
    background-color: $darkgold;
-   border-bottom: 10px solid $darkergold;
    height: 75px;
    margin: 0;
    a {
