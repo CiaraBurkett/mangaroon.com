@@ -9,10 +9,10 @@ Template.newManga.events "submit form": (e) ->
         author: $(e.target).find("[name=author]").val()
         description: $(e.target).find("[name=description]").val()
 
-    file = manga.cover.files[0]
+    file = $('#cover').get(0).files[0]
 
     sf.upload file, (err, result) ->
-        manga.reset()
+        file.reset()
         console.log "Upload public URL:" + sf.resolvePublic(result)
         return
 
