@@ -4,15 +4,15 @@ Template.newManga.events "submit form": (e) ->
     e.preventDefault()
 
     manga =
-        cover: $(e.target).find("[name=cover]").val()
+        cover: $('#cover').get(0).files[0]
         title: $(e.target).find("[name=title]").val()
         author: $(e.target).find("[name=author]").val()
         description: $(e.target).find("[name=description]").val()
 
-    file = $('#cover').get(0).files[0]
+    # file = $('#cover').get(0).files[0]
 
-    sf.upload file, (err, result) ->
-        file.reset()
+    sf.upload manga.cover, (err, result) ->
+        manga.cover.reset()
         console.log "Upload public URL:" + sf.resolvePublic(result)
         return
 
