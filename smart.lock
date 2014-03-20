@@ -19,8 +19,8 @@
     "packages": {
       "scss": {
         "git": "https://github.com/fourseven/meteor-scss.git",
-        "tag": "v0.7.0",
-        "commit": "39f60d58c2b890bdd897ef52188644f3093fc2ac"
+        "tag": "v0.8.3",
+        "commit": "84fa8b09766e85a9e85b5606903f4222b7dd7605"
       },
       "bourbon": {
         "git": "https://github.com/chicagogrooves/meteor-bourbon.git",
@@ -74,8 +74,8 @@
       },
       "foundation5-sass": {
         "git": "https://github.com/lgollut/meteor-foundation5-sass.git",
-        "tag": "v0.0.9",
-        "commit": "bd89f1600a0360afb1bd4cc6ff6dc7d30450084d"
+        "tag": "v0.0.11",
+        "commit": "58710f270be7ed4e439ac31a88223c006257c741"
       },
       "profile": {
         "git": "https://github.com/BeDifferential/meteor-profile.git",
