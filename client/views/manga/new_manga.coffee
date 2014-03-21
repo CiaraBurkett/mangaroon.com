@@ -4,8 +4,8 @@ Template.newManga.events "submit form": (e) ->
     e.preventDefault()
 
     manga =
-        coverInput: $('#cover').get(0).files[0]
-        cover: $(e.target).find("[name=cover]").val()
+        coverInput: $('#coverInput').get(0).files[0]
+        #cover:
         title: $(e.target).find("[name=title]").val()
         author: $(e.target).find("[name=author]").val()
         description: $(e.target).find("[name=description]").val()
