@@ -1,8 +1,8 @@
 <template name="newManga">
     <form action="#">
         <div>
-            <label for="coverInput">Cover Image</label>
-            <input id="coverInput" name="coverInput" type="file" value="" accept="image/*" />
+            <label for="cover">Cover Image</label>
+            <input id="cover" name="cover" type="text" value="" placeholder="Image URL" accept="image/*" />
         </div>
         
         <div>
@@ -10,10 +10,10 @@
             <input name="title" type="text" value="" placeholder="Manga Title" />
         </div>
         
-        <div>
-            <label for="author">Author</label>
-            <input name="author" type="text" value="" placeholder="Mangaka" />
-        </div>
+        <!-- <div> -->
+        <!--     <label for="author">Author</label> -->
+        <!--     <input name="author" type="text" value="" placeholder="Mangaka" /> -->
+        <!-- </div> -->
         
         <div>
             <label for="description">Description</label>
@@ -21,6 +21,5 @@
         </div>
 
         <button type="submit">Submit</button>
-        <!-- <input type="submit" value="Submit" /> -->
     </form>
 </template>
