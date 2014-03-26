@@ -23,7 +23,7 @@
     throw new Meteor.Error(302, "This manga has already been posted.", mangaWithSameLink._id) if mangaAttributes.url and mangaWithSameLink
 
     # Pick out the whitelisted keys
-    manga = _.extend(_.pick(mangaAttributes, "cover", "title", "author", "description", "coverInput"),
+    manga = _.extend(_.pick(mangaAttributes, "cover", "title", "author", "description"),
         userId: user._id
         author: user.username
         submitted: new Date().getTime()
