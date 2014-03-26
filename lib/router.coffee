@@ -7,6 +7,8 @@ Router.configure
 Router.map () ->
     @route "mangaList",
         path: "/"
+        data: ->
+            Meteor.user()
 
     @route "mangaPage",
         path: "/manga/:_id"
@@ -23,11 +25,13 @@ Router.map () ->
 
     @route "dashboard",
         path: "/dashboard"
-        data: ->
-            Meteor.user()
+        # data: ->
+        #     Meteor.user()
 
     @route "userProfile",
         path: "/users/:_id"
+        data: ->
+            Meteor.user()
 
 requireLogin = () ->
     unless Meteor.user()
