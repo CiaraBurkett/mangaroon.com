@@ -1,5 +1,8 @@
 <template name="mangaList">
     <div class="manga">
+        {{#unless currentUser}}
+            {{> intro}}
+        {{/unless}}
         {{#each manga}}
             {{> mangaItem}}
         {{/each}}
