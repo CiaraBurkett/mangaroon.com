@@ -4,7 +4,7 @@ Template.mangaEdit.events
         currentMangaId = @_id
         mangaProperties =
             title: $(e.target).find("[name=title]").val()
-            embedCode: $(e.target).find("[name=embedCode]").val()
+            readLink: $(e.target).find("[name=readLink]").val()
             description: $(e.target).find("[name=description]").val()
 
         Manga.update currentMangaId,

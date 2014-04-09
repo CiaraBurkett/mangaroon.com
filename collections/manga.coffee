@@ -7,7 +7,7 @@
 @Manga.deny
     update: (userId, manga, fieldNames) ->
         # May only edit the following three fields
-        return (_.without(fieldNames, "title", "author", "description").length > 0)
+        return (_.without(fieldNames, "title", "readLink", "description").length > 0)
 
 @Meteor.methods manga: (mangaAttributes) ->
     user = Meteor.user()
@@ -23,7 +23,7 @@
     throw new Meteor.Error(302, "This manga has already been posted.", mangaWithSameLink._id) if mangaAttributes.url and mangaWithSameLink
 
     # Pick out the whitelisted keys
-    manga = _.extend(_.pick(mangaAttributes, "cover", "title", "author", "description", "embedCode"),
+    manga = _.extend(_.pick(mangaAttributes, "cover", "title", "author", "description", "readLink"),
         userId: user._id
         author: user.username
         submitted: new Date().getTime()

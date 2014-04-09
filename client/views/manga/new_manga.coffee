@@ -4,7 +4,7 @@ Template.newManga.events "submit form": (e) ->
 
     manga =
         cover: $(e.target).find("[name=cover]").val()
-        embedCode: $(e.target).find("[name=embedCode]").val()
+        readLink: $(e.target).find("[name=readLink]").val()
         title: $(e.target).find("[name=title]").val()
         author: $(e.target).find("[name=author]").val()
         description: $(e.target).find("[name=description]").val()
